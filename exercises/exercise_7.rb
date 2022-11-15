@@ -18,4 +18,6 @@ answer = gets.chomp
 user_store = Store.new( name: answer )
 user_store.valid?
 puts user_store.errors[:annual_revenue]
+puts user_store.errors[:mens_apparel]
+puts user_store.errors[:womens_apparel]
 
