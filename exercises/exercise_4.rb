@@ -18,7 +18,7 @@ yaletown = Store.create( name: "Yaletown", annual_revenue: 190000, mens_apparel:
   puts "#{mens_store.name} \n #{mens_store.annual_revenue}"
 end
 
-@womens_stores = Store.where( womens_apparel: true )
+@womens_stores = Store.where( womens_apparel: true, annual_revenue: ..(1000000))
 
 @womens_stores.each do |womens_store|
   puts "#{womens_store.name} \n #{womens_store.annual_revenue}"

@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "What would you like to name your store?"
+
+answer = gets.chomp
+
+user_store = Store.new( name: answer )
+user_store.valid?
+puts user_store.errors[:annual_revenue]
+
